@@ -1,4 +1,5 @@
 import 'package:cubit_practice/CountCubit.dart';
+import 'package:cubit_practice/List/list_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: BlocProvider(create: (context)=> CountCubit(),child: HomePage(),),
+      home: BlocProvider(create: (context)=> ListCubit(),child: HomePage(),),
     );
   }
 }
